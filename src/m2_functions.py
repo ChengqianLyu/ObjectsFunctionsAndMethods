@@ -3,12 +3,12 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Chengqian Lyu HERE.
 """
 
 ########################################################################
 #
-# TODO: 1. PUT YOUR NAME IN THE ABOVE LINE and...
+# DONE: 1. PUT YOUR NAME IN THE ABOVE LINE and...
 #
 #   Allow this file to use the rosegraphics.py file by marking the src
 #   directory as a "Sources Root".  Do that by right clicking on the src folder,
@@ -35,10 +35,9 @@ def main():
 
     turtle1()
     turtle4()
-    turtle5()
+    turtle2()
     turtle3()
-    turtle2()
-    turtle2()
+    turtle5()
 
     window.close_on_mouse_click()
 
@@ -113,41 +112,36 @@ def turtle4():
     Constructs a default SimpleTurtle.
     Makes that SimpleTurtle move around some.
     """
-    dave = rg.SimpleTurtle()
-    dave.pen = rg.Pen('red', 5)
-    dave.speed = 20
-    dave.right(90)
-    dave.forward(100)
-    dave.begin_fill()
-    dave.draw_circle(50)
-    dave.end_fill()
-
+    fff=rg.SimpleTurtle()
+    fff.speed=50
+    fff.pen=rg.Pen('purple',5)
+    fff.backward(200)
+    fff.right(80)
+    fff.forward(200)
+    fff.left(200)
+    fff.forward(300)
+    fff.begin_fill()
+    fff.draw_circle(90)
+    fff.end_fill()
 
 def turtle5():
     """
     Constructs two SimpleTurtles that move around some.
     """
-    dave = rg.SimpleTurtle('turtle')
-    dave.pen = rg.Pen('yellow', 5)
-    dave.speed = 3
-    dave.right(180)
-    dave.forward(200)
-    dave.begin_fill()
-    dave.draw_circle(50)
-    dave.end_fill()
-
-    matt = rg.SimpleTurtle('turtle')
-    matt.pen = rg.Pen('magenta', 5)
-    matt.speed = 3
-    matt.right(135)
-    matt.forward(300)
-    matt.begin_fill()
-    matt.draw_circle(50)
-    matt.end_fill()
+    aaa=rg.SimpleTurtle()
+    aaa.speed=20
+    aaa.pen=rg.Pen('pink',3)
+    aaa.left(30)
+    aaa.forward(100)
+    aaa.right(180)
+    aaa.backward(200)
+    aaa.begin_fill()
+    aaa.draw_circle(30)
+    aaa.end_fill()
 
 ########################################################################
 #
-# TO DO: 2.
+# DONE: 2.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
@@ -179,7 +173,7 @@ def turtle5():
 
 ########################################################################
 #
-# TO DO: 3.
+# DONE: 3.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
@@ -209,7 +203,7 @@ def turtle5():
 
 ########################################################################
 #
-# TO DO: 4.
+# DONE: 4.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
@@ -225,7 +219,7 @@ def turtle5():
 
 ########################################################################
 #
-# TO DO: 5.
+# DONE: 5.
 #   The previous two TODOs IMPLEMENTED a function (TO DO 3)
 #   and TESTED that function (TO DO 4).
 #
